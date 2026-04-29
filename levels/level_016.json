@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "levelId": "L016",
+    "version": 1,
+    "type": "starter",
+    "difficulty": 21
+  },
+  "winCondition": {
+    "targetItem": {
+      "level": 2,
+      "type": "tree"
+    },
+    "quantity": 1,
+    "mustExistOnBoard": true
+  },
+  "failCondition": {
+    "maxMoves": 15,
+    "minEmptyCells": 0
+  },
+  "boardRules": {
+    "size": [
+      6,
+      6
+    ],
+    "initialItems": [
+      {
+        "x": 0,
+        "y": 3,
+        "level": 1,
+        "type": "seed"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "level": 1,
+        "type": "seed"
+      }
+    ],
+    "blockedCells": [],
+    "lockedCells": [],
+    "specialCells": []
+  },
+  "itemRules": {
+    "allowedLevels": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "spawnableLevels": [
+      1
+    ],
+    "mergeRules": [
+      {
+        "fromLevel": 1,
+        "toLevel": 2
+      }
+    ]
+  },
+  "adRules": {
+    "failTriggerZone": [
+      1,
+      2
+    ],
+    "rescueItem": {
+      "level": 1,
+      "type": "seed"
+    },
+    "doubleRewardEnabled": true
+  }
+}
